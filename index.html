@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+
+<body>
+    <header class="position-sticky top-0 ">
+        <div class="navbar navbar-expand-lg p-3 navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/foto-logo.png" width="auto" height="60" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills gap-3 text-light">
+                        <li class="nav-item font-md">
+                            <a class="nav-link p-1 active" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item font-md">
+                            <a class="nav-link p-1" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item font-md">
+                            <a class="nav-link p-1" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item font-md">
+                            <a class="nav-link p-1" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item font-md">
+                            <a class="nav-link p-1" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="home" class="scroll-opacity">
+                <div id="carouselExampleIndicators" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/foto-carousel1.webp" data-bs-interval="3000" class="d-block w-100"
+                                alt="Foto Carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/foto-carousel2.webp" data-bs-interval="3000" class="d-block w-100"
+                                alt="Foto Carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/foto-carousel3.webp" data-bs-interval="3000" class="d-block w-100"
+                                alt="Foto Carousel">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" role="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" role="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </section>
+            <section id="sobre" class="scroll-opacity">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                            <img src="assets/foto-loja.jpg" alt="foto loja">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-flex-start">
+                            <h2>Sobre a nossa loja</h2>
+                            <p>Nossa loja oferece uma ampla variedade de produtos de alta qualidade para atender às suas
+                                necessidades. Desde moda praia até semi-joias elegantes e cestas personalizadas, temos
+                                tudo o que você precisa para se destacar em qualquer ocasião. Nosso compromisso é
+                                proporcionar uma experiência de compra excepcional, combinando produtos de excelência
+                                com um atendimento personalizado. Visite-nos hoje e descubra o que torna a nossa loja
+                                única!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="destaques" class="scroll-opacity">
+                <div class="container d-flex flex-column align-items-center gap-1">
+                    <h2>Destaques</h2>
+                    <nav class="nav nav-pills ">
+                        <button data-bs-toggle="tab" data-bs-target="#tab4" class="nav-link text-dark active"
+                            type="button">Moda
+                            Praia</button>
+                        <button data-bs-toggle="tab" data-bs-target="#tab5" class="nav-link text-dark"
+                            type="button">Semi-joias</button>
+                        <button data-bs-toggle="tab" data-bs-target="#tab6" class="nav-link text-dark"
+                            type="button">Cestas
+                            Personalizadas</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane py-5 active" id="tab4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane py-5" id="tab5">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>250,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane py-5" id="tab6">
+                            <div class="row">
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="promocoes" class="scroll-opacity">
+                <div class="container d-flex flex-column align-items-center gap-1">
+                    <h2>Promoçoes</h2>
+                    <nav class="nav nav-pills ">
+                        <button data-bs-toggle="tab" data-bs-target="#tab1" class="nav-link text-dark active"
+                            type="button">Moda
+                            Praia</button>
+                        <button data-bs-toggle="tab" data-bs-target="#tab2" class="nav-link text-dark"
+                            type="button">Semi-joias</button>
+                        <button data-bs-toggle="tab" data-bs-target="#tab3" class="nav-link text-dark"
+                            type="button">Cestas
+                            Personalizadas</button>
+                    </nav>
+                    <div class="tab-content">
+                        <div class="tab-pane py-5 active" id="tab1">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-biquinis.webp"
+                                            alt="Foto de biquini">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Biquinis</h4>
+                                            <h5 class="card-subtitle"><strong>100,00 R$</strong></h5>
+                                            <p class="card-text">Biquínis de alta qualidade para o verão. Escolha o seu
+                                                e arrase na praia ou piscina!</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane py-5" id="tab2">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-semi-joia.webp"
+                                            alt="Foto Semi-joias">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Semi-joias</h4>
+                                            <h5 class="card-subtitle"><strong>200,00 R$</strong></h5>
+                                            <p class="card-text">Semi-joias finas e elegantes para você brilhar em
+                                                qualquer ocasião.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane py-5" id="tab3">
+                            <div class="row">
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md d-flex justify-content-center">
+                                    <article class="card">
+                                        <img src="assets/foto-cesta.webp" alt="Cestas Personalizadas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cestas personalizadas</h4>
+                                            <h5 class="card-subtitle"><strong>150,00 R$</strong></h5>
+                                            <p class="card-text">Cestas personalizadas com deliciosos produtos para
+                                                presentear alguém especial.</p>
+                                            <a href="#produto" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contato" class="scroll-opacity">
+                <div class="container">
+                    <h2>Entre em Contato</h2>
+                    <form id="contato-mensagem">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Insira seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Insira seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="produto">Produto:</label>
+                            <input type="text" class="form-control" id="produto" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer  mt-3 py-3">
+                <div class="container">
+                    <span class="text-muted">© 2024 Nome da Sua Empresa. Todos os direitos reservados.</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="src/script/main.js"></script>
+
+</body>
+
+</html>
